@@ -10,4 +10,6 @@
 
 # 5. Read some_parameter_ex3.xlsx and create a parameter in the same container as in exercise 1-4 dropping entries containing NaN as needed
 
-# 6. export gdx and compare to "solutions.gdx"
+# 6. Read some_parameter_ex4.xlsx and create a parameter in the same container as in exercise 1-5 renaming elements according to mock_metadata.xlsx as needed
+
+# 7. export gdx and compare to "solutions.gdx"
