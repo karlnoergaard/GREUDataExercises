@@ -5,7 +5,7 @@ import pandas as pd
 # 1. initialize a container and write a gdx containing a single set called "my_first_set" with elements "one", "two", "three" (populate manually)
 m=gp.Container()
 my_first_set=gp.Set(container=m,name='my_first_set',records=['one','two','three'])
-m.write('my_first_gdx_solution.gdx')
+m.write(r'output\my_first_gdx_solution.gdx')
 
 # 2. read the excel file data/some_parameter_ex1.xlsx and create sets and a parameter in a new container
 some_parameter_ex1_raw=pd.read_excel(r'mock_data\some_parameter_ex1.xlsx')
@@ -60,4 +60,4 @@ some_parameter_ex4_raw['nouns']=some_parameter_ex4_raw['nouns'].replace(translat
 some_parameter_ex4_raw['adjectives']=some_parameter_ex4_raw['adjectives'].replace(synonyms_dict)
 some_parameter_ex4=gp.Parameter(m,name='some_parameter_ex4',domain=[nouns,adjectives],records=some_parameter_ex4_raw)
 # 7. export gdx and compare to "solutions.gdx"
-m.write('solutions.gdx')
+m.write(r'output\solutions.gdx')

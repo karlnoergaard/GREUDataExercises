@@ -17,7 +17,7 @@ letters_set=gp.Set(container,name='letters',description='symbols which represent
 #parameter is defined and added to container
 some_parameter=gp.Parameter(container,name='some_parameter',domain=[letters_set,nouns_set,adjectives_set],description='idk',records=some_parameter.values.tolist())
 #export
-container.write(r'from_working_with_read_data\from_trial_1.gdx')
+container.write(r'output\from_trial_1.gdx')
 '''how to debug'''
 
 #Assume that I want to define another parameter on the same sets
@@ -30,7 +30,7 @@ other_parameter
 #####To debug:
 
 #write a .gdx (or if you feel pythonically inclined you can perform this check in python)
-container.write(r'from_working_with_read_data\debug_session.gdx')
+container.write(r'output\debug_session.gdx')
 
 #view the non-level columns of the dataframe - these correspond to sets
 print(other_parameter)
@@ -59,5 +59,5 @@ letters_set=gp.Set(container,name='letters',description='symbols which represent
 letters_set=gp.Set(container,name='letters',description='symbols which represent a sound that can be strung together to form words',records=['A','B','C','D'])
 other_parameter_caseb=gp.Parameter(container,name='other_parameter_caseb',domain=[letters_set,adjectives_set],description='idk2',records=other_parameter_caseb)
 
-container.write(r'from_working_with_read_data\trial_complete.gdx')
+container.write(r'output\trial_complete.gdx')
 #Extra note, most sets are defined directly from metadata.xlsx, so please make sure this is consistent with your datasheets :)
